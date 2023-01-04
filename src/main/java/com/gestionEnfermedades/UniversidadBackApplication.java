@@ -1,4 +1,4 @@
-package com.gestionEnfermedades.UniversidadBack;
+package com.gestionEnfermedades;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,3 +11,5 @@ public class UniversidadBackApplication {
 	}
 
 }
+
+// Esta clase es la que ejecuta todo el proyecto
