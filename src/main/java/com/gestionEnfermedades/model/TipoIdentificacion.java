@@ -6,9 +6,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Data;
 // Esto es un mapero, es decir que le decimos a hibernet que esta clase hace referencia a la tabla tipo de identificacion
 // y cada uno de los atributos como se llama en la BD
 
+@Data
 @Entity // indicamos que es una entidad
 @Table(name = "tipo_identificacion") // indicamos a cual tabla hace referencia
 
@@ -31,9 +33,12 @@ public class TipoIdentificacion {
 	
 	//Hemos terminado el mapeo de la tabla tipo_identificacion
 	
+	
+	
+	// esto no sirve porque usamos lombok, sin embargo se deja comentado como guia
 	// AHORA CREAMOS LOS SETTERS Y GETTERS 
 
-	public int getId() {
+	/*public int getId() {
 		return id;
 	}
 
@@ -57,7 +62,7 @@ public class TipoIdentificacion {
 		this.descripcion = descripcion;
 	}
 
-	
+	*/
 	
 	
 	
