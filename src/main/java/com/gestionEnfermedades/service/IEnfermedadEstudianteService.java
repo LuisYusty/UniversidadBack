@@ -2,6 +2,6 @@ package com.gestionEnfermedades.service;
 
 import com.gestionEnfermedades.model.EnfermedadEstudiante;
 
-public interface IEnfermedadEstudianteService extends ICrudService<EnfermedadEstudiante>{
+public interface IEnfermedadEstudianteService extends ICrudService<EnfermedadEstudiante>{ //indicamos el modelo
 
 }

@@ -5,6 +5,7 @@ import java.util.List;
 // La interfaz nos ayuda reutulizar codigo en los cruds
 //nos ayuda a indicar cuales son los metodos de los cruds
 
+// ESTAS SON LAS INTERFACES y sirven para crear un servicio de cada modelo
 
 public interface ICrudService <T>{ // interfaz generica ,T tipo de dato cualquiera
 	
