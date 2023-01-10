@@ -7,10 +7,10 @@ import org.springframework.stereotype.Service;
 
 import com.gestionEnfermedades.model.TipoIdentificacion;
 import com.gestionEnfermedades.repository.ITipoIdentificacionRepository;
-import com.gestionEnfermedades.service.ITipoIdentificacion;
+import com.gestionEnfermedades.service.ITipoIdentificacionService;
 
 @Service
-public class TipoIdentificacionServiceImpl implements ITipoIdentificacion{
+public class TipoIdentificacionServiceImpl implements ITipoIdentificacionService{
 	
 	@Autowired
 	private ITipoIdentificacionRepository repo;

@@ -4,11 +4,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.gestionEnfermedades.model.EnfermedadEstudiante;
-import com.gestionEnfermedades.model.Estudiante;
 import com.gestionEnfermedades.repository.IEnfermedadEstudianteRepository;
-import com.gestionEnfermedades.repository.IEstudianteRepository;
 import com.gestionEnfermedades.service.IEnfermedadEstudianteService;
 
 // implementamos cada servicio que tengamos
@@ -21,7 +18,7 @@ public class EnfermedadEstudianteServiceImpl implements IEnfermedadEstudianteSer
 	// comenzamos a hacer uso de la inyeccion de dependencias
 	
 	
-	@Autowired  // busca la implementacion de la interfaz que l framewok ya lo hizo
+	@Autowired  // busca la implementacion de la interfaz que el framewok ya lo hizo
 	            // INSTANCIAMOS EL REPOSITORIO
 
 	private IEnfermedadEstudianteRepository repo; //instaciamos el repositorio pero es necesario hacer la inyeccion de dependencias

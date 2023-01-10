@@ -7,41 +7,41 @@ import org.springframework.stereotype.Service;
 
 import com.gestionEnfermedades.model.TipoSangre;
 import com.gestionEnfermedades.repository.ITipoSangreRepository;
-import com.gestionEnfermedades.service.ITipoSangre;
+import com.gestionEnfermedades.service.ITipoSangreService;
 
 @Service
-public class TipoSangreRepositoryImpl  implements ITipoSangre{
+public class TipoSangreRepositoryImpl  implements ITipoSangreService{
 
 	@Autowired
 	private ITipoSangreRepository repo;
 
 	@Override
 	public List<TipoSangre> listarTodos() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return repo.findAll();
 	}
 
 	@Override
 	public TipoSangre listarPorId(int id) {
 		// TODO Auto-generated method stub
-		return null;
+		return repo.findById(id).orElse(null);
 	}
 
 	@Override
 	public void registrar(TipoSangre entidad) {
-		// TODO Auto-generated method stub
+		repo.save(entidad);
 		
 	}
 
 	@Override
 	public void actualizar(TipoSangre entidad) {
-		// TODO Auto-generated method stub
+		repo.save(entidad);
 		
 	}
 
 	@Override
 	public void eliminar(int id) {
-		// TODO Auto-generated method stub
+		repo.deleteById(id);
 		
 	}
 	

@@ -2,6 +2,7 @@ package com.gestionEnfermedades.service.impl;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.gestionEnfermedades.model.Estudiante;
@@ -12,6 +13,7 @@ import com.gestionEnfermedades.service.IEstudianteService;
 @Service
 public class EstudianteServiceImpl implements IEstudianteService{
 
+	@Autowired
 	private IEstudianteRepository repo;
 
 	@Override
@@ -28,19 +30,19 @@ public class EstudianteServiceImpl implements IEstudianteService{
 
 	@Override
 	public void registrar(Estudiante entidad) {
-		// TODO Auto-generated method stub
+		repo.save(entidad);
 		
 	}
 
 	@Override
 	public void actualizar(Estudiante entidad) {
-		// TODO Auto-generated method stub
+		repo.save(entidad);
 		
 	}
 
 	@Override
 	public void eliminar(int id) {
-		// TODO Auto-generated method stub
+		repo.deleteById(id);
 		
 	}
 	
