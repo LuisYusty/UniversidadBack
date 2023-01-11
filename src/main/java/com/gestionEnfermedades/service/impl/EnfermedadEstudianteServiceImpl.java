@@ -41,7 +41,7 @@ public class EnfermedadEstudianteServiceImpl implements IEnfermedadEstudianteSer
 
 	@Override
 	public void registrar(EnfermedadEstudiante entidad) {
-		repo.save(entidad); // el .save sirva para registrar y actualizar
+		repo.save(entidad); // el .save sirve para registrar y actualizar
 
 	}
 
