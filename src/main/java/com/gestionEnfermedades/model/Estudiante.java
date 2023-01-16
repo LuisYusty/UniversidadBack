@@ -22,7 +22,7 @@ public class Estudiante {
 	private int id;
 	
 	@Column (name = "numero_identificacion",nullable = false)
-	private String numero_identificacion;
+	private String numeroIdentificacion;
 	
 	@Column(name = "nombre",nullable = false)
 	private String nombre;
@@ -31,17 +31,19 @@ public class Estudiante {
 	private String apellido;
 	
 	@Column(name = "fecha_nacimiento",nullable = false)
-	private LocalDate fecha_nacimiento;
+	private LocalDate fechaNacimiento;
+	
 	
 	
 	@ManyToOne  //muchas enfermedades puede tener 1 estudiante
 	@JoinColumn(name = "id_tipo_identificacion", nullable = false)
-	private TipoIdentificacion TipoIdentificacion ; //ya que es un FK se usa el nombre de la clase como el tipo de dato
+	private TipoIdentificacion tipoIdentificacion ; //ya que es un FK se usa el nombre de la clase como el tipo de dato
 	
 	
 	@ManyToOne
 	@JoinColumn(name = "id_tipo_sangre", nullable = false)
-	private TipoSangre TipoSangre;
+	private TipoSangre tipoSangre;
 
+	
 	
 }

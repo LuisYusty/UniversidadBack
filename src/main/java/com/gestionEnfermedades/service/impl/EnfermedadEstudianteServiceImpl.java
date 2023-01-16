@@ -20,7 +20,7 @@ public class EnfermedadEstudianteServiceImpl implements IEnfermedadEstudianteSer
 	
 	@Autowired  // busca la implementacion de la interfaz que el framewok ya lo hizo
 	            // INSTANCIAMOS EL REPOSITORIO
-
+ 
 	private IEnfermedadEstudianteRepository repo; //instaciamos el repositorio pero es necesario hacer la inyeccion de dependencias
 	
 	

@@ -21,5 +21,4 @@ public interface ICrudService <T>{ // interfaz generica ,T tipo de dato cualquie
 
 	public void eliminar(int id);
 	
-
 }
