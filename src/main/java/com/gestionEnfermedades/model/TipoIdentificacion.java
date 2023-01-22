@@ -35,6 +35,23 @@ public class TipoIdentificacion {
 	
 	
 	
+	//HAGREGAMOS ESTO PARA PRUEBA UNITARIA NUMERO 4
+	public  TipoIdentificacion() {
+		
+	}
+	
+    public  TipoIdentificacion(int id) {
+    this.id=id;		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	// esto no sirve porque usamos lombok, sin embargo se deja comentado como guia
 	// AHORA CREAMOS LOS SETTERS Y GETTERS 
 

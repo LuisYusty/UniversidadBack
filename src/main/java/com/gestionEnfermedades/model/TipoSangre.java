@@ -27,4 +27,15 @@ public class TipoSangre {
 	@Column(name = "descripcion",nullable = false)
 	private String descripcion;
 	
+	
+	
+	//PARA PRUEBA UNITARIA 4
+	public  TipoSangre() {
+		
+	}
+	
+     public  TipoSangre(int id) {
+		this.id=id;
+	}
+	
 }
