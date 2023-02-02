@@ -5,5 +5,7 @@
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">  
                       
-  <include file="classpath:database/changelog-inicial.sql"/>   
+  <include file="classpath:database/changelog-inicial.sql"/>   <!-- archivo de migracion -->
 </databaseChangeLog>
+
+<!--  este archivo contendra las instrucciones de cambios que se deben realizar en tu base de datos-->
