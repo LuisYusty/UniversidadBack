@@ -25,10 +25,10 @@ public class EnfermedadEstudiante {
 	@JoinColumn(name = "id_estudiante", nullable = false)
 	private Estudiante estudiante; // nombre atributo en java
 	
-	@Column(name = "nombre")
+	@Column(name = "nombre",nullable = false)
 	private String nombre;
 	
-	@Column(name = "observacion")
+	@Column(name = "observacion",nullable = false)
 	private String observacion;
 
 
